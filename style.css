@@ -9,19 +9,38 @@ body {
   min-height: 100vh;
   background-color: #a8d5e3;
 }
-/* h1 section */
+/* Header section */
 .Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 20px 100px 0px 100px;
 }
 .navbar ul {
   display: flex;
   list-style: none;
-  text-decoration: none;
   justify-content: space-between;
+  align-items: center;
+}
+.navbar li {
+  margin-left: 1em;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #068b9a;
+  padding: 20px;
+  border-radius: 10px;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #c7c9d3;
 }
 
+.navbar li:hover {
+  background-color: aliceblue;
+}
+.navbar li a:hover {
+  color: #03092b;
+}
 /* Table Component */
 .employee {
   color: rgb(12, 12, 12);

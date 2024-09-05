@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="Header">The Company Employee Information</h1>
+    <div class="Header">
+      <h1 class="Title">The Company Employee Information</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</li></a>
+          <li><a href="#">Employee List</a></li>
+          <li><a href="#">Contact</li></a>
+        </ul>
+      </nav>
+    </div>
     <!-- Table Start -->
     <section class="table">
       <table class="employee">
@@ -20,7 +29,7 @@
           <th>Designation</th>
           <th>Salary</th>
         </thead>
-       <!-- Table Body -->
+        <!-- Table Body -->
         <tr>
           <td>Captain America</td>
           <td rowspan="2">02.05.2005</td>
@@ -50,8 +59,29 @@
           <td>Assitant CTO</td>
           <td>6000</td>
         </tr>
-     
       </table>
+      <!-- Form Section -->
+    </section>
+    <section class="form">
+      <form action="">
+        <label for="fname">First Name</label><br />
+        <input type="text" id="fname" placeholder="First Name" /><br />
+        <label for="lname">Last Name</label><br />
+        <input type="text" id:"lname" placeholder="Last Name" /><br />
+        <label for="Email">Email</label><br />
+        <input type="Email" placeholder="Enter your Email id" /><br />
+        <label for="password"> Enter your Password</label><br />
+        <input type="password" placeholder="Password" /><br />
+
+        <label for="expert">Expertise</label><br />
+        <select name="expert" id="expert">
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="php">php</option>
+          <option value="JS">Java Script</option></select
+        ><br />
+        <button>Submit</button>
+      </form>
     </section>
   </body>
 </html>

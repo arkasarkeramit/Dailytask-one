@@ -1,51 +1,109 @@
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  
+  margin: 0;
+  padding: 0;
 }
-  body {
-    min-height: 100vh;
-    background-color: #A8D5E3;
-    
-  }
-  /* h1 section */
-  .Header{
-     color: rgb(57, 6, 90);
-     text-align: center;
-     margin: 20px;
-  }
+body {
+  min-height: 100vh;
+  background-color: #a8d5e3;
+}
+/* h1 section */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
 /* Table Component */
-  .employee{
-    color: rgb(12, 12, 12);
-    margin-top: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+.employee {
+  color: rgb(12, 12, 12);
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  }
+.employee td,
+.employee th {
+  border: 1px solid #03092b;
+  padding: 20px;
+  text-align: center;
+}
 
- .employee td, .employee th {
-    border: 1px solid #03092b;
-    padding: 20px;
-    text-align: center;
-  }
+.employee th {
+  background-color: rgb(7, 236, 217);
+}
 
-  .employee th{
-    background-color: rgb(7, 236, 217);
-   
-  }
+/* Sudo Class */
+.employee tr:nth-child(even) {
+  background-color: antiquewhite;
+}
 
-  /* Sudo Class */
-  .employee tr:nth-child(even){
-    background-color: antiquewhite;
-  }
+.employee tr:hover {
+  background-color: aliceblue;
+}
 
-  .employee tr:hover{
-    background-color: aliceblue;
-  }
+/* Form Component */
+
+.form {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  font-family: Arial, Helvetica;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type="text"],
+select {
+  display: inline-block;
+  width: 50vh;
+  padding: 20px 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="Email"] {
+  display: inline-block;
+  width: 50vh;
+  padding: 20px 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="password"] {
+  display: inline-block;
+  width: 50vh;
+  padding: 20px 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #068b9a;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+button:hover {
+  background-color: #0a35df;
+}
